@@ -1,36 +1,74 @@
 import './App.css';
 import { useState } from 'react';
-import React from 'react';
-
+import Header from './Header';
+// scroll down -> motion graphic for each post
 //JavaScript
 function App() {
   
-  let [title, changeTitle] = useState(['First post', 'Second post', 'Third post']);
-  let [thumb, thumbUp] = useState(0);
+  let [title, changeTitle] = useState(['Introduction', 'Skills', 'About me', 'Archiving', 'Career', 'Projects']);
+  
 
   //HTML 
   return (
     <div className='App'>
-        <div className='black-nav'>
-            <div>Jay's Portfolio</div>
+        <Header/>
+        <div className='list'>
+          <h3> { title[0] } </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
         </div>
         <div className='list'>
-          <h3> { title[0] } <span onClick={ () => { thumbUp(thumb + 1)} }>👍🏻</span> { thumb } </h3>
-          <p>February 11</p>
+          <h3> Test </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        <div className='list'>
+          <h3> Test </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        <div className='list'>
+          <h3> Test </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        <div className='list'>
+          <h3> Test </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        <div className='list'>
+          <h3> Test </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        <div className='list'>
+          <h3> Test </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        
+        <div className='list'>
+          <h3> { title[1] } </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        <div className='list'>
+          <h3> { title[2] } </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        <div className='list'>
+          <h3> { title[3] } </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
+          <hr/> 
+        </div>
+        <div className='list'>
+          <h3> { title[4] } </h3> {/* My Introduciton */}
+            <p>Hello, This is Jaehoon Jung software egineer</p>
           <hr/> 
         </div>
 
-        <div className='list'>
-          <h3> { title[1] } </h3>
-          <p>February 12</p>
-          <hr/>
-        </div>
-
-        <div className='list'>
-          <h3> { title[2] } </h3>
-          <p>February 13</p>
-          <hr/>
-        </div>
         
     </div>
   );
